@@ -52,3 +52,21 @@ Selon Amazon pour caculer les capacités max des serveurs, on peut faire le calc
 | Page d'accueil        |    500    |       1       |         1.5K          |
 | Visionner une voie    |    500    |       1       |          10K          |
 | Reussir une voie      |    500    |       1       |          8K           |
+
+## Environnements
+
+### Dev
+
+- CPU: Intel Core i7 6 cœurs @ 2,6GHz
+- RAM: 16Go DDR4 3200MHz
+- OS: MacOS Montery 12.3.1
+- Node 16.13.0
+
+### Prod
+
+- CPU: Intel AVX2 (2 vCPU)
+- RAM: 8Go
+- Linux
+- Node 16.13.0
+
+Coéfficient proportionnel : `0.33`
