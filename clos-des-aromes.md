@@ -202,9 +202,9 @@ Les métriques qui définiront le succès des tests seront :
         <td>Duration</td>
         <td>
             <ul>
-                <li>Ramp-up: 100VUser / 5min</li>
-                <li>Steady State : 250VUser / 1h10</li>
-                <li>Ramp-down: 150VUser / 15min</li>
+                <li>Ramp-up: 500 Thread / 5min</li>
+                <li>Steady State : 500 Thread / 20sec</li>
+                <li>Ramp-down: 0 Thread / 1min</li>
             </ul>
         </td>
     </tr>
