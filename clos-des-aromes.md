@@ -117,3 +117,112 @@ Les métriques qui définiront le succès des tests seront :
         <td>Envoyer un message</td>
     </tr>
 </table>
+
+## Éxécution des tests
+
+<table>
+    <tr>
+        <th>Test Run</th>
+        <th>Test Scenario Summary</th>
+    </tr>
+    <tr>
+        <td>Cycle 1 - Run 1</td>
+        <td>Endurance Test - 3h avec 50% de la capacité</td>
+    </tr>
+    <tr>
+        <td>Cycle 1 - Run 2</td>
+        <td>Stress Test - 1h30 avec 125% de la capacité</td>
+    </tr>
+    <tr>
+        <td>Cycle 2 - Run 1</td>
+        <td>Endurance Test - 2h avec 50% de la capacité</td>
+    </tr>
+    <tr>
+        <td>Cycle 2 - Run 2</td>
+        <td>Stress Test - 1h30 avec 125% de la capacité</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Test Details</th>
+    </tr>
+    <tr>
+        <td>Purpose</td>
+        <td>Voir si le site tiens sur la durée avec une charge modérée</td>
+    </tr>
+    <tr>
+        <td>No. of Tests</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Duration</td>
+        <td>
+            <ul>
+                <li>Ramp-up: 25VUser / 15min</li>
+                <li>Steady State : 100VUser / 2h15</li>
+                <li>Ramp-down: 40VUser / 30min</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Scenario Name</td>
+        <td>Endurance Test</td>
+    </tr>
+    <tr>
+        <td>User Load / Volume</td>
+        <td>100</td>
+    </tr>
+    <tr>
+        <td>Validation Criteria</td>
+        <td>
+            <ul>
+                <li>Response Time : < 1s</li>
+                <li>Utilisation du CPU : <= 45%</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th></th>
+        <th>Test Details</th>
+    </tr>
+    <tr>
+        <td>Purpose</td>
+        <td>Voir si le site tiens avec un pic de surcharge (Exemple lors de l'heure du midi)</td>
+    </tr>
+    <tr>
+        <td>No. of Tests</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Duration</td>
+        <td>
+            <ul>
+                <li>Ramp-up: 100VUser / 5min</li>
+                <li>Steady State : 250VUser / 1h10</li>
+                <li>Ramp-down: 150VUser / 15min</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>Scenario Name</td>
+        <td>Stress Test</td>
+    </tr>
+    <tr>
+        <td>User Load / Volume</td>
+        <td>250</td>
+    </tr>
+    <tr>
+        <td>Validation Criteria</td>
+        <td>
+            <ul>
+                <li>Response Time : < 3s</li>
+                <li>Utilisation du CPU : <= 80%</li>
+            </ul>
+        </td>
+    </tr>
+</table>
