@@ -36,3 +36,84 @@ L'application est un site vitrine sous NGINX développé par Hospitality Digital
 
 ## Exigences du test
 
+Le site devra être capable de supporter la connexion d'au moins 200 utilisateurs en simultané.
+
+<table>
+    <tr>
+        <th>Business Transactions</th>
+        <th>User Load</th>
+        <th>Response Time</th>
+        <th>Transaction per hour</th>
+    </tr>
+    <tr>
+        <td>Accéder à la page d'accueil</td>
+        <td>150</td>
+        <td>1s</td>
+        <td>200</td>
+    </tr>
+    <tr>
+        <td>Envoyer un message</td>
+        <td>30</td>
+        <td>1s</td>
+        <td>75</td>
+    </tr>
+</table>
+
+## Environnement de test
+
+### Dev
+CPU : Intel Core i7-7700K
+RAM : 8GB
+OS : Linux
+Software : Apache/2.4.6
+
+### Prod
+CPU : Intel Core i7-11700
+RAM : 16GB
+OS : Linux
+Software: Apache/2.4.6
+
+## Planification des tests
+
+Les types de tests seront de l'Endurance Testing et du Stress Testing. 
+
+Métriques à surveiller :
+- Utilisation de la RAM
+- Utilisation du CPU
+- Utilisation de la bande passante
+
+Les métriques qui définiront le succès des tests seront :
+- Utilisation de la RAM
+- Utilisation du CPU
+
+## Étapes des tests
+
+<table>
+    <tr>
+        <th>Step #</th>
+        <th>Business Process Name : Accéder à la page d'accueil</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Page d'accueil</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Changer la langue d'affichage</td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <th>Step #</th>
+        <th>Business Process Name : Contacter le restaurant</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Page d'accueil</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Envoyer un message</td>
+    </tr>
+</table>
